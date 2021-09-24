@@ -125,4 +125,10 @@ body {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .title2 {
+    display: inline;
+  }
+}
 /*# sourceMappingURL=main.css.map */
