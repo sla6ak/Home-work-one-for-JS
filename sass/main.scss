@@ -18,7 +18,11 @@ body{
     display: flex;
     justify-content: center;
     background-color: cadetblue;
+    width: 100vw;
     padding: 30px 0px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 }
 .cards{
     color: rgb(167, 231, 181);
@@ -28,18 +32,27 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px 10px;
+    margin: 10px 10px;
     padding: 10px;
     border-radius: 10px;
     transition-duration: 300ms;
     transition-timing-function:(cubic-bezier(0.4, 0, 0.2, 1));
+    @media screen and (max-width: 768px){
+        width: 90vw;
+        height: 30px;
+    }
     &.active{
         width: 800px;
+        @media screen and (max-width: 768px){
+            width: 90vw;
+            height: 300px;
+        }
         & .title2{
+            display: inline;
             color: rgb(235, 247, 215);
             background-color: rgba(30, 70, 30, 0.3);
+            }
         }
-    }
 }
 .work1{
     background-image: url(https://sevremont-expert.ru/wp-content/uploads/2016/11/ul_anovsk_60_6580016449601476657.jpg);
@@ -66,4 +79,7 @@ body{
     background-color: rgba(30, 70, 30, 0.1);
     display: inline;
     border-radius: 3px;
+    @media screen and (max-width: 1000px){
+            display: none;
+    }
 }
